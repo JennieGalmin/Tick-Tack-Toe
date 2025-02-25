@@ -8,6 +8,15 @@ h1{
     grid-template-rows: auto auto auto;
     padding: 5rem
 }
+
+.reStartButton{
+    padding: 2rem
+}
+.reStart{
+    display: flex;
+    justify-content: center;
+}
+
 button{
     padding: 4rem
 }
