@@ -1,28 +1,48 @@
 body{
     background-color: #242F40;
     color: #CCA43B;
+    font-family: monospace;
 }
-
 h1{
     display: flex;
     justify-content: center;
+    font-size: 3rem;
 }
-.board{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    padding: 5rem
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
 }
 
-.reStartButton{
+.board{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem;
+    grid-template-rows: 10rem 10rem 10rem;
     
-    padding: 2rem
 }
 .reStart{
     display: flex;
     justify-content: center;
 }
 
-button{
-    padding: 4rem
+.reStartButton{
+    background-color: #D6D4D4;
+    color: #242F40;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    padding: 1rem;
 }
+
+.board button{
+    width: 10rem;
+    height: 10rem;
+    font-family: cursive;
+    font-size: 2rem;
+    margin: 1px;
+    background-color: #D6D4D4;
+    border: 1px solid #242F40;
+}
+
+

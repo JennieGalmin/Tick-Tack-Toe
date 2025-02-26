@@ -37,6 +37,7 @@ const startGame = () => {
     buttons.forEach(button => {
         button.disabled = false;
     })
+    winnerText.textContent = "";
 }
 
 const endGame = () => {
