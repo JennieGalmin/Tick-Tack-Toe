@@ -25,12 +25,24 @@ const diagonalWin = [
 const winningCombinations = [horisontalWin, verticalWin, diagonalWin];
 
 
+const reStartGame = () => {
+  reStartButton.addEventListener("click", () => {
+    startGame()
+    buttons.forEach(button => {
+       button.textContent = "";
+    })
+  })
+}
 const startGame = () => {
-  
+    buttons.forEach(button => {
+        button.disabled = false;
+    })
 }
 
 const endGame = () => {
-
+    buttons.forEach(button => {
+        button.disabled = true;
+    })
 }
 
 const playingGame = () => {
@@ -55,7 +67,7 @@ const winningGame = () => {
                 buttons[indexA].textContent === buttons[indexC].textContent){
 
             winnerText.textContent = `Player ${buttons[indexA].textContent} is the winner`;
-
+                    endGame()
                 }
         }
     }
@@ -63,3 +75,4 @@ const winningGame = () => {
 
 
 playingGame()
+reStartGame()
